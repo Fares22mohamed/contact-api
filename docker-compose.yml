@@ -1,0 +1,11 @@
+services:
+  contact-api:
+    build: .
+    container_name: contact-api
+    ports:
+      - "5000:5000"
+    environment:
+      MAIL_USERNAME: "fm0119678@gmail.com"
+      MAIL_PASSWORD: "jmzmwqcvyhigofmn"
+    volumes:
+      - ./data:/app/data
